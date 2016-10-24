@@ -8,8 +8,7 @@ module ComputeDistribution
         LicenseAgreement.new(
           right_holder_slug: 'stillvortalent',
           owned_percentage: 1.00,
-          rightsup_commission: 0.20,
-          introducer_commission: 0,
+          rightsup_commission: 0.20
         )
       ]
 
@@ -21,7 +20,6 @@ module ComputeDistribution
       assert_equal 'stillvortalent', statement_rows.first.right_holder_slug
       assert_equal 80, statement_rows.first.right_holder_share
       assert_equal 20, statement_rows.first.rightsup_share
-      assert_equal 0, statement_rows.first.introducer_share
     end
   end
 end

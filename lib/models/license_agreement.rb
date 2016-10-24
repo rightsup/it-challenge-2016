@@ -8,6 +8,6 @@ class LicenseAgreement
     @right_holder_slug = options[:right_holder_slug]
     @owned_percentage = options[:owned_percentage]
     @rightsup_commission = options[:rightsup_commission]
-    @introducer_commission = options[:introducer_commission]
+    @introducer_commission = options[:introducer_commission] || 0.0
   end
 end
