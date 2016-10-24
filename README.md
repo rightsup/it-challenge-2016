@@ -1,5 +1,9 @@
 # Run with docker
 
+We use [Docker](https://www.docker.com/) in our development and production environments. So we'd like you to use it here. If you absolutely cannot get Docker running, then you can complete the challenge outside of a container, but it's not prefered. 
+
+You can read about getting started with Docker Compose [Here](https://docs.docker.com/compose/install/)
+
 Run a "test" container with:
 `docker-compose -f docker-compose.test.yml run sut bash`
 
