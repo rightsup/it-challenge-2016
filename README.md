@@ -57,8 +57,8 @@ DistributionRow.new(amount: 100, recording_id: 12345, ...)
 
 There are three tests with different level of complexity. The first one in `test/services/compute_distribution/test_simple_case` should be trivial to solve. 
 
-Inside `test/services/compute_distribution/test_split.rb` you have more complex example. The first test is exactly the situation explained above. The second one introduce the notion of "business introducer", where another party has brough to us the deal with the client and get a percentage of our commission. In the example, the "introducer" should get 50% of RightsUp commission.
-This example is better explained by the picture at the root of the repository: `distribution_chart.png`.
+Inside `test/services/compute_distribution/test_split.rb` you have more complex example. The first test is exactly the situation explained above. The second one introduce the notion of "business introducer", where another party has brough to us the deal with the client and get a percentage of our commission. In the example, the "introducer" should get 50% of RightsUp commission.  
+This example is better explained by [distribution_chart.png](distribution_chart.png).
 
 The output of this method should be an array of `StatementRow` (because from this one row of revenue, we might split into multiple clients). 
 (Context: These statement rows could then be used to compute the Statement of the client and create a boundary between the incomming and outgoing revenues).
