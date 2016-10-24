@@ -1,7 +1,7 @@
 FROM ruby:2.3-alpine
 MAINTAINER RightsUp <it@rightsup.com>
 
-RUN apk add --update alpine-sdk
+RUN apk add --update alpine-sdk bash
 
 # RUN locale-gen en_US.UTF-8
 # ENV LANG en_US.UTF-8
