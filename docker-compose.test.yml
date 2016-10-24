@@ -1,0 +1,7 @@
+sut:
+  build: .
+  command: 'bundle exec rake test'
+  environment:
+    - RACK_ENV=test
+  volumes:
+    - .:/app
