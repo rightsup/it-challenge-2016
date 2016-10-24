@@ -7,7 +7,7 @@ You can read about getting started with Docker Compose [Here](https://docs.docke
 Run a "test" container with:
 `docker-compose -f docker-compose.test.yml run sut bash`
 
-Once inside of it, run `bundle exec rake test`.
+Once inside of it, run `bundle exec rake test` to run the test suite.
 
 # Challenge
 
